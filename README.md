@@ -2,7 +2,7 @@
 Voip Application using SIP API
 
 ## Project Description 
-In this project, the aim is to create an application using the SIP.js API. This application should allow a sip connection between two different users where different media types are being shared. The first step in our implementation is to be able to use one of the online phone services provided. Following the sip.js guide, we used onsip.com to create two accounts to be used in our application. We then construct in our implementation two simpleUsers: the caller and the callee, to experiment with the API to establish the connection between those two users. Our implemented application allows users to establish audio and video calls over the internet with different features.
+In this project, the aim is to create an application using the SIP.js API. This application should allow a sip connection between two different users where different media types are being shared. The first step in our implementation is to be able to use one of the online phone services provided. Following the sip.js guide, we used onsip.com to create two accounts to be used in our application. We then construct in our implementation two simpleUsers: the caller and the callee, to experiment with the API to establish the connection between those two users. Our implemented application allows users to establish video calls over the internet with different features. The users have the option to close the camera to continue having an audio call instead.
 ## Important Diagrams
 Important diagrams that highlight how our application operates. 
 The following diagram shows the hierarchy of out project and how we rely on the SIP API and onsip server to form the VOIP call. 
