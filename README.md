@@ -278,7 +278,7 @@ The following screenshot shows the ringing procedure to our end, indicating the 
 The following screenshot shows the call request from the caller, in this case Farida, that was sent from our web page. 
 ![call from farida](https://drive.google.com/uc?id=14EclywuPNGRDwJkb2v8whycfsGjdann7)
 The following screenshots show the call in progress on both ends, denoting a successful connection. 
-![call from web end](https://drive.google.com/uc?id=1rRnKjXr47dF4vniotdiRlHTDNRQ670LM)
+![call from web end](https://drive.google.com/uc?id=1i5RdJbgYI8lE9ysbzT9_1swWTxMvpo6T)
 ![call on salma's end](https://drive.google.com/uc?id=12ywAWzEhYIXXWtXHCyys2p3oeluaBej4)
 
 Once we end the call, the connection will terminate and the status of our web page will change as follows: 
