@@ -274,7 +274,7 @@ The following screenshot shows the initializing of the call and how it prompts t
 ![allow call](https://drive.google.com/uc?id=1EbXd8-WbXhxwJNxhRnsrvmpMusDz8rgW)
 
 The following screenshot shows the ringing procedure to our end, indicating the initiation of the session and that the request is sent to the other end. 
-![ringing](https://drive.google.com/uc?id=1quCAe5YbaQnxiP22w073dr5GLUWduLYJ)
+![Ringing](https://drive.google.com/uc?id=1EbXd8-WbXhxwJNxhRnsrvmpMusDz8rgW)
 The following screenshot shows the call request from the caller, in this case Farida, that was sent from our web page. 
 ![call from farida](https://drive.google.com/uc?id=14EclywuPNGRDwJkb2v8whycfsGjdann7)
 The following screenshots show the call in progress on both ends, denoting a successful connection. 
@@ -282,7 +282,10 @@ The following screenshots show the call in progress on both ends, denoting a suc
 ![call on salma's end](https://drive.google.com/uc?id=12ywAWzEhYIXXWtXHCyys2p3oeluaBej4)
 
 Once we end the call, the connection will terminate and the status of our web page will change as follows: 
-![end call](https://drive.google.com/uc?id=181hHUDjxB5IlBQaQdKhSxzsGjg_5TdRS)
+![endcall](https://drive.google.com/uc?id=1HzZb-bJGNzkeMVIkv2Ik0Ggg5QHW3G2T)
+
+If the call was canceled from any of the users, the status of our web page will change as follows:
+![failed](https://drive.google.com/uc?id=1qPX6wtIbgVeQCwAG3SzTjm4kwOhEdZn4)
 ## Performance 
 We noticed that the performance of our established call is great, audio and video are clear however it lags depending on the internet speed which is expected since this is a Voip call. 
 ## Conclusions and Limitations
