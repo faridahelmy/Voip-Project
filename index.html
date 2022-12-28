@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    VOIP call
+<!-- 1. HTML boilerplate code -->
+</head>
+<body>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <div class="button-container">
+    <video id="remote-video" autoplay></video>
+    <!-- 2. Let's make our user interface -->
+    <button id="invite">   <i class="fa fa-user-plus"></i> </button>
+    <audio id="remote"></audio>
+    <button id="mute" class="off"> <i class="fa fa-microphone-slash"></i></button>
+    <button id="hangup"> <i class="fa fa-phone-slash"></i></button>
+  </div>
+  <div id="bodytext"></div>
+
+<!-- 3. Include SIP.js  -->
+<script src="http://sipjs.com/download/sip-0.13.5.js"></script>
+<script src="main.js"></script>
+
+<script>
+  if (window.location.hash === '#dev') {
+    var i = 1;
+    window.setInterval(function () { console.log(i); i++; }, 950);
+    window.setTimeout(function () { window.location.reload(); }, 10000);
+  }
+
+
+// Reload the page after 10 seconds if the #dev hash is present
+if (window.location.hash === '#dev') {
+      var i = 1;
+      window.setInterval(function () { console.log(i); i++; }, 950);
+      window.setTimeout(function () { window.location.reload(); }, 10000);
+    }
+</script>
+</body>
+</html>

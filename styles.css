@@ -1,0 +1,131 @@
+/* Set the default font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  /* Style the video element */
+  #remote-video {
+    width: 70%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  /* Style the buttons */
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0072c6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+      
+      
+  }
+  
+  button:hover {
+    background-color: #0052cc;
+  }
+  
+  /* Style the mute button */
+  #mute {
+    background-color: #cc3333;
+  }
+  
+  #mute.on {
+    background-color: #660000;
+  }
+  
+  #mute:hover {
+    background-color: #990000;
+  }
+  
+  /* Add a header */
+  header {
+    background-color: #00b0f0;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Style the header elements */
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  header h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  /* Style the invite button */
+  #invite {
+    margin: 10px;
+  }
+  
+  /* Style the hangup button */
+  #hangup {
+    margin: 10px;
+  }
+  
+  /* Style the mute button */
+  #mute {
+    margin: 10px;
+  }
+  
+  /* Style the button container */
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:end;
+    bottom: 0;      
+  }
+
+  button {
+    /* other button styles */
+    position: relative;
+  }
+  
+  button:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #invite:before {
+    background: url(invite-icon.png);
+  }
+  
+  #hangup:before {
+    background-image: url(hangup-icon.png);
+  }
+  
+  #mute:before {
+    background-image: url(mute-icon.png);
+  }
+  
+  
