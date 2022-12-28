@@ -132,113 +132,141 @@ The css file styles the layout of our html file by specifying the look of the bu
 ```
 /* Set the default font and background color */
 body {
-font-family: Arial, sans-serif;
-background-color: #f8f8f8;
-display: flex;
-flex-direction: column;
-/* align-items: center; */
-}
-/* Style the video element */
-#remote-video {
-width: 70%;
-height: auto;
-border-radius: 4px;
-box-shadow: 0  2px  4px rgba(0, 0, 0, 0.1);
-margin: 20px  0;
-}
-/* Style the buttons */
-button {
-margin: 10px;
-padding: 10px  20px;
-border: none;
-border-radius: 4px;
-background-color: #0072c6;
-color: white;
-font-size: 16px;
-cursor: pointer;
-width: 50px;
-height: 50px;
-border-radius: 50%;
-}
-button:hover {
-background-color: #0052cc;
-}
-/* Style the mute button */
-#mute {
-background-color: #cc3333;
-}
-#mute.on {
-background-color: #660000;
-}
-#mute:hover {
-background-color: #990000;
-}
-/* Add a header */
-header {
-background-color: #00b0f0;
-background-repeat: no-repeat;
-background-position: center;
-color: white;
-padding: 20px;
-}
-/* Style the header elements */
-header  h1 {
-margin: 0;
-font-size: 24px;
-font-weight: normal;
-text-align: center;
-justify-content: center;
-}
-header  h2 {
-margin: 0;
-font-size: 16px;
-font-weight: normal;
-}
-/* Style the invite button */
-#invite {
-margin: 10px;
-}
-/* Style the hangup button */
-#hangup {
-margin: 10px;
-}
-/* Style the mute button */
-#mute {
-margin: 10px;
-}
-/* Style the button container */
-.button-container {
-display: flex;
-flex-direction: row;
-align-items:center;
-justify-content:end;
-bottom: 0;
-} 
-button {
-/* other button styles */
-position: relative;
-}
-button:before {
-content: "";
-display: inline-block;
-width: 25px;
-height: 25px;
-background-repeat: no-repeat;
-background-position: center;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-#invite:before {
-background: url(invite-icon.png);
-}
-#hangup:before {
-background-image: url(hangup-icon.png);
-}
-#mute:before {
-background-image: url(mute-icon.png);
-}
+    font-family: Arial, sans-serif;
+    background-color: #87a7bee0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  .video-component{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  #bodytext{
+    font-size: 20pt;
+    padding-bottom: 5px;
+
+  }
+  /* Style the video element */
+  #remote-video {
+    width: auto;
+    height: 500px;
+    border-radius: 4px;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    justify-content: center;
+    background-color: white;
+
+  }
+  
+  /* Style the buttons */
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0072c6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    
+  }
+  #mute {
+    background-color: #0052cc;
+    margin: 10px;
+  }
+
+  #mute:hover {
+    background-color: #003d99;
+  }
+
+ #mute:focus:not(:active),
+  button[aria-pressed="true"]:focus {
+    background-color: #002b66; /* press color */
+  }
+  
+  /* use the :checked pseudo-class to toggle the aria-pressed attribute on the button */
+  input[type="checkbox"]:checked + label[for] {
+    aria-pressed: not(aria-pressed);
+  }
+    
+  /* Style the mute button */
+  #hangup {
+    background-color: #cc3333;
+    margin: 10px;
+  }
+  
+  #hangup:hover {
+    background-color: #990000;
+  }
+  
+  #invite {
+    background-color: #2ecc71;
+    margin: 10px;
+
+  }
+    
+  #invite:hover {
+    background-color: #27ae60;
+  }
+
+  /* Add a header */
+  header {
+    background-color: #00b0f0;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  }
+  
+  /* Style the header elements */
+  h1 {
+    margin: auto;
+    font-size: 50px;
+    font-weight:bold;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  header h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  /* Style the button container */
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    bottom: 0;      
+  }
+  
+  button:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 ```
 ## Tests 
 The following screenshot shows the initializing of the call and how it prompts to the user to allow access to the camera and the microphone to initiate the call. 
