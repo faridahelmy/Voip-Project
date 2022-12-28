@@ -7,8 +7,10 @@ In this project, the aim is to create an application using the SIP.js API. This 
 Important diagrams that highlight how our application operates. 
 The following diagram shows the hierarchy of out project and how we rely on the SIP API and onsip server to form the VOIP call. 
 ![diagram files](https://drive.google.com/uc?id=1JltfoUL3Z4ltZ-e6LgPlfWEMHuccAOjP)
+
 The next diagram shows how the session initiation is established and how the call is made. 
 ![call diagram](https://drive.google.com/uc?id=1ioH5paIp7mvzPz5asPM2y9lxoRY9cAJw)
+
 ## Source Code 
 ### SIP.js API 
 The SIP API is the tool that helps us connect the caller to the callee, by initializing the caller in the user agent method provided in the SIP library, by using the method SIP.Web.Simple where we pass our simpleUser that will play the role of the caller. We specify the callee by using the method ua.call() that enables the initialized user agent to call the other user. We also use from the SIP library the function ua.hangup(), ua.mute() and ua.unmute() when building the functionalities of our application.
@@ -273,19 +275,28 @@ The following screenshot shows the initializing of the call and how it prompts t
 
 ![allow](https://drive.google.com/uc?id=1RcEIAEZEWkSGC1ctcHmhmGowHTHe2PvA)
 
-The following screenshot shows the ringing procedure to our end, indicating the initiation of the session and that the request is sent to the other end. 
+The following screenshot shows the ringing procedure to our end, indicating the initiation of the session and that the request is sent to the other end.
+
 ![ringing](https://drive.google.com/uc?id=1unWohT6yWMsYh_tjITG_yD_AFcfIvMjg)
+
 The following screenshot shows the call request from the caller, in this case Farida, that was sent from our web page. 
+
 ![call from farida](https://drive.google.com/uc?id=14EclywuPNGRDwJkb2v8whycfsGjdann7)
+
 The following screenshots show the call in progress on both ends, denoting a successful connection. 
+
 ![call from web end](https://drive.google.com/uc?id=1i5RdJbgYI8lE9ysbzT9_1swWTxMvpo6T)
+
 ![call on salma's end](https://drive.google.com/uc?id=12ywAWzEhYIXXWtXHCyys2p3oeluaBej4)
 
 Once we end the call, the connection will terminate and the status of our web page will change as follows: 
+
 ![endcall](https://drive.google.com/uc?id=1HzZb-bJGNzkeMVIkv2Ik0Ggg5QHW3G2T)
 
 If the call was canceled from any of the users, the status of our web page will change as follows:
+
 ![failed](https://drive.google.com/uc?id=1qPX6wtIbgVeQCwAG3SzTjm4kwOhEdZn4)
+
 ## Performance 
 We noticed that the performance of our established call is great, audio and video are clear however it lags depending on the internet speed which is expected since this is a Voip call. 
 ## Conclusions and Limitations
