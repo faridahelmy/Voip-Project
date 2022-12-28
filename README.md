@@ -274,7 +274,7 @@ The following screenshot shows the initializing of the call and how it prompts t
 ![allow call](https://drive.google.com/uc?id=1EbXd8-WbXhxwJNxhRnsrvmpMusDz8rgW)
 
 The following screenshot shows the ringing procedure to our end, indicating the initiation of the session and that the request is sent to the other end. 
-![Ringing](https://drive.google.com/uc?id=1EbXd8-WbXhxwJNxhRnsrvmpMusDz8rgW)
+![ringing](https://drive.google.com/uc?id=1unWohT6yWMsYh_tjITG_yD_AFcfIvMjg)
 The following screenshot shows the call request from the caller, in this case Farida, that was sent from our web page. 
 ![call from farida](https://drive.google.com/uc?id=14EclywuPNGRDwJkb2v8whycfsGjdann7)
 The following screenshots show the call in progress on both ends, denoting a successful connection. 
