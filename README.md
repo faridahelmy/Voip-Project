@@ -259,7 +259,7 @@ Once we end the call, the connection will terminate and the status of our web pa
 We noticed that the performance of our established call is great, audio and video are clear however it lags depending on the internet speed which is expected since this is a Voip call. 
 ## Conclusions and Limitations
 
-To conclude, our project successfully establishes a connection between the 2 simpleusers that we initiated. And an audio and video call is well connected. Transfer of data using the SIP.js API is great, however we note that it has its own limitations such as we cannot do call transfers and we need to have one simultaneous call at a time. 
+To conclude, our project successfully establishes a connection between the two simpleusers that we initiated. And an audio and video call is well connected. Transfer of data using the SIP.js API is great, however we note that it has its own limitations such as we cannot do call transfers and we need to have one simultaneous call at a time. 
 ## Group Contributions
 
 ## References 
