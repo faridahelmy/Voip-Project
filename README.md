@@ -271,7 +271,7 @@ body {
 ## Tests 
 The following screenshot shows the initializing of the call and how it prompts to the user to allow access to the camera and the microphone to initiate the call. 
 
-![allow call](https://drive.google.com/uc?id=1EbXd8-WbXhxwJNxhRnsrvmpMusDz8rgW)
+![allow](https://drive.google.com/uc?id=1RcEIAEZEWkSGC1ctcHmhmGowHTHe2PvA)
 
 The following screenshot shows the ringing procedure to our end, indicating the initiation of the session and that the request is sent to the other end. 
 ![ringing](https://drive.google.com/uc?id=1unWohT6yWMsYh_tjITG_yD_AFcfIvMjg)
