@@ -304,6 +304,9 @@ We noticed that the performance of our established call is great, audio and vide
 To conclude, our project successfully establishes a connection between the two simpleusers that we initiated. And an audio and video call is well connected. Transfer of data using the SIP.js API is great, however we note that it has its own limitations such as we cannot do call transfers and we need to have one simultaneous call at a time. 
 ## Group Contributions
 
+Farida H. and Honey were responsible for creating the report and creating the code for the call, hold and hang up.
+Salma and Farida G. were responsible for creating the presentation and the code for session ringing, connected and failed to connect status.
+
 ## References 
 https://www.onsip.com/
 https://sipjs.com/guides/simple-user/
